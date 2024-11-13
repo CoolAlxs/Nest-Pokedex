@@ -16,7 +16,13 @@ pnpm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
-5. Reconstruir la base de datos con la seed
+5. Clonar el archivo ```.env.template``` y renombrarlo a ```.env```
+6. Llenar las variables de entorno en el archivo ```.env```
+7.Ejecutar la Aplicación en dev:
+```
+pnpm run start:dev
+```
+8. Reconstruir la base de datos con la seed
 ```
 http://localhost:3000/api/v2/seed
 ```
